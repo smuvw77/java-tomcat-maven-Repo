@@ -4,7 +4,7 @@
 
 <h3>WelCome DevOps Training</h3>
 
-<p> TDepoly code to Stage and production env</p>
+<p> TDepoly code to Stage Environment </p>
 
 </body>
 </html>
