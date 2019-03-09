@@ -8,7 +8,7 @@ pipeline {
 
            }
         }
-        }
+        
 
         stage ('Deploy Build in Staging Area'){
             steps{
