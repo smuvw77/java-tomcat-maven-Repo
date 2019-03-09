@@ -4,9 +4,13 @@ pipeline {
         stage ('Build Servlet Project') {
             steps {
             
+            def mvnHome = tool name: 'MAVEN_HOME', type: 'maven'   
+      echo mvnHome
+      bat "${mvnHome}/bin/mvn package"
+      echo 'welcome'
                    
                 /*For windows machine */
-               bat  'mvn clean package'
+              // bat  'mvn clean package'
 
                 /*For Mac & Linux machine */
                // sh  'mvn clean package'
