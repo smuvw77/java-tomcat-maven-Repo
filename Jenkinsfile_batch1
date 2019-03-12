@@ -5,15 +5,13 @@ agent any
 stages{
 
     stage('Build and package') {
-          step{
+          steps{
                  powershell 'mvn clean package'
               }
 
          }
 
-
 }
  
-
 
 }
