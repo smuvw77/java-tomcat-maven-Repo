@@ -10,7 +10,7 @@ stages{
               }
               post{
               success{
-               echo "Arching the build'
+               echo 'Arching the build'
                
                archiveArtifacts '**/*.war'
               
