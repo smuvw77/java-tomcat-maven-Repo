@@ -8,6 +8,15 @@ stages{
           steps{
                  powershell 'mvn clean package'
               }
+              post{
+              success{
+               echo "Arching the build'
+               
+               archiveArtifacts '**/*.war'
+              
+              }
+              
+              }
 
          }
 
