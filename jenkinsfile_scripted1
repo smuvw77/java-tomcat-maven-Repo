@@ -2,7 +2,7 @@ node{
 
 stage('Building'){
 
- powershell 'mvn clean package
+ powershell 'mvn clean package'
 }
 
 }
