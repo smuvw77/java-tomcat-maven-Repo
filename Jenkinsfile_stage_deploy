@@ -22,7 +22,7 @@ pipeline {
         stage ('Deploy Build in Staging Area'){
             steps{
 
-                build job : 'Pipeline_Deploy_Stage_Area'
+                build job : 'DevOps\Pipeline_Deploy_Stage_Area'
 
            }
         }
