@@ -1,9 +1,10 @@
-node {  
-
-    parameters {
+parameters {
   string defaultValue: 'sam', description: 'Enter UserName', name: 'uname'
   choice choices: ['Dev', 'QA', 'PROD'], description: 'Enter Env ', name: 'Env'
 }
+
+node {  
+
     stage('Build') { 
         echo "Buld the code"
 	echo "code build is done"
