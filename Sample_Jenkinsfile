@@ -11,7 +11,7 @@ pipeline {
                 
                 echo WORKSPACE
                 
-                echo BRANCH_NAME
+                
             }
         }
 
