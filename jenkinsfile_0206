@@ -1,0 +1,13 @@
+node {  
+    stage('Build') { 
+        echo "Buld the code"
+	echo "code build is done 
+    }
+    stage('Test') { 
+        
+	echo "verify the URL"
+    }
+    stage('Deploy') { 
+        echo "Deploy the code to QA"
+    }
+}
