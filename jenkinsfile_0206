@@ -1,7 +1,9 @@
 properties([
     
     parameters([
-        choice(choices: ["QA", "Stage","Prod"].join("\n"), description: 'select state', name: 'Enviornment')
+        choice(choices: ["QA", "Stage","Prod"].join("\n"), description: 'select Env', name: 'Enviornment'),
+	 string(defaultValue: 'Chicago', description: 'Enter City', name: 'City')
+	
         ])
         
  ])
