@@ -1,7 +1,7 @@
 node {  
     stage('Build') { 
         echo "Buld the code"
-	echo "code build is done 
+	echo "code build is done"
     }
     stage('Test') { 
         
