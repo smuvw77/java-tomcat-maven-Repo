@@ -1,5 +1,10 @@
 pipeline {
     agent any
+    
+    parameters {
+  string defaultValue: 'sam', description: 'Enter UserName', name: 'uname'
+}
+
     stages {
         stage ('Initialize') {
             steps {
