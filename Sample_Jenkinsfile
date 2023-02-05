@@ -6,6 +6,12 @@ pipeline {
                 echo  "Initializing the Code File"
                 
                 echo JOB_NAME
+                
+                echo BUILD_NUMBER
+                
+                echo WORKSPACE
+                
+                echo BRANCH_NAME
             }
         }
 
