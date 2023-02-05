@@ -18,5 +18,11 @@ pipeline {
                 echo 'Deployed an Artifact'
             }
         }
+        
+         stage ('Test') {
+            steps {
+                echo 'Test the app'
+            }
+        }
     }
 }
