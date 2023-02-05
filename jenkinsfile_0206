@@ -1,12 +1,11 @@
 properties([
-
-parameters({
-  string(defaultValue: 'sam', description: 'Enter UserName', name: 'uname')
- //choice choices: ['Dev', 'QA', 'PROD'], description: 'Enter Env ', name: 'Env'
-})
-
-
-])
+    
+    parameters([
+        choice(choices: ["QA", "Stage","Prod"].join("\n"), description: 'select state', name: 'Enviornment')
+        ])
+        
+ ])
+	
 
 
 
@@ -16,7 +15,7 @@ node {
         echo "Buld the code"
 	echo "code build is done"
 	
-	 echo "${params.uname}"
+	 echo "${params.Enviornment}"
     }
     stage('Test') { 
         
