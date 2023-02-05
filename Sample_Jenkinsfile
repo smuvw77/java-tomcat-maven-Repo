@@ -13,6 +13,8 @@ pipeline {
                 
                 echo "${params.uname}"
                 
+                echo "${params.Env}"
+                
                 echo JOB_NAME
                 
                 echo BUILD_NUMBER
