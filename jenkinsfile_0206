@@ -1,7 +1,14 @@
 node {  
+
+    parameters {
+  string defaultValue: 'sam', description: 'Enter UserName', name: 'uname'
+  choice choices: ['Dev', 'QA', 'PROD'], description: 'Enter Env ', name: 'Env'
+}
     stage('Build') { 
         echo "Buld the code"
 	echo "code build is done"
+	
+	 echo "${params.uname}"
     }
     stage('Test') { 
         
