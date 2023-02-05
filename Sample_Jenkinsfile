@@ -1,6 +1,11 @@
 pipeline {
     agent any
     
+    environment {
+         TestEnv = "QA"
+ }
+
+    
     parameters {
   string defaultValue: 'sam', description: 'Enter UserName', name: 'uname'
   choice choices: ['Dev', 'QA', 'PROD'], description: 'Enter Env ', name: 'Env'
@@ -20,6 +25,8 @@ pipeline {
                 echo BUILD_NUMBER
                 
                 echo WORKSPACE
+                
+                echo TestEnv
                 
                 
             }
