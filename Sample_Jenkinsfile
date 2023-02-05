@@ -4,6 +4,8 @@ pipeline {
         stage ('Initialize') {
             steps {
                 echo  "Initializing the Code File"
+                
+                echo JOB_NAME
             }
         }
 
