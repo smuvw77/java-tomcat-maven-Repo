@@ -10,7 +10,7 @@ pipeline {
             steps {
                 echo  "Initializing the Code File"
                 
-                echo ${params.uname}
+                echo "${params.uname}"
                 
                 echo JOB_NAME
                 
